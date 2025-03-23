@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mon portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Mokambo <span class="text-color">Rosly</span></h1>
+            <ul>
+                <li><a href="#accueil" class="active">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#projets">Projets</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="accueil" class="container bg-white">
+        <div class="content">
+            <h2>Je suis <span class="text-color">Rosly</span>, Développeur en devenir <br>
+                passionné par le web et le design !</h2>
+
+            <button class="btn margin-top btn-center">Voir mes projets</button>
+        </div>
+        <div class="image">
+            <img src="coding.png" alt="Coding image">
+        </div>
+    </section>
+
+    <div id="apropos" class="bg-about">
+        <h1 class="titre">À propos</h1>
+        <section class="container bg-about">
+            <div class="content">
+                <p>Je m'appelle <span class="text-color">Mokambo</span>, passionné par la <br> création de sites web modernes et interactifs</p>
+
+                <p>Je suis actuellement étudiant(e) <span class="text-color">en développement web</span> en développement web, <br> et je cherche à améliorer mes compétences en JavaScript, HTML et CSS.</p>
+
+                <p>J'adore transformer mes idées en projets concrets <br> et expérimenter avec les nouvelles technologies.</p>
+
+                <button class="btn margin-top btn-left">Télécharger mon CV</button>
+            </div>
+            <div class="photo">
+                <div class="avatar">
+                    <img src="image.png" alt="Ma photo">
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <hr>
+
+    <div id="projets" class="bg-white">
+        <h1 class="titre">Mes Projets</h1>
+        <section class="projet">
+            <div class="card">
+                <p>Un mini-jeu interactif en JavaScript <br> qui utilise des événements DOM.</p>
+                <div class="card-footer">
+                    <p>#html #css #js</p>
+                    <button class="btn btn-center">Voir</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <p>Un mini-jeu interactif en JavaScript <br> qui utilise des événements DOM.</p>
+                <div class="card-footer">
+                    <p>#html #css #js</p>
+                    <button class="btn btn-center">Voir</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <p>Un mini-jeu interactif en JavaScript <br> qui utilise des événements DOM.</p>
+                <div class="card-footer">
+                    <p>#html #css #js</p>
+                    <button class="btn btn-center">Voir</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="competences">
+        <h1 class="titre-competence">Mes Compétences</h1>
+        <section class="skills-container">
+            <div class="skills-card">
+                <h3>Soft Skills</h3>
+                <div class="skill">
+                    <span>Gestion de projet</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 80%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Résolution de problème</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>Adaptabilité</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 88%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-card">
+                <h3>Hard Skills</h3>
+                <div class="skill">
+                    <span>HTML</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 95%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>CSS</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>JavaScript</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <span>VS Code</span>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 98%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="contact" class="bg-form">
+        <div class="container-form">
+            <h2 class="text-center">Vous avez un <span class="text-color">projet en tête ?</span></h2>
+            <p class="text-center">N'hésitez pas à me <span class="text-color">contacter</span></p>
+
+            <form id="contactForm">
+                <div class="input-group">
+                    <div>
+                        <label for="prenom">Votre prénom</label>
+                        <input type="text" id="prenom" placeholder="John">
+                    </div>
+                    <div>
+                        <label for="nom">Votre nom</label>
+                        <input type="text" id="nom" placeholder="Doe">
+                    </div>
+                </div>
+
+                <div>
+                    <label for="sujet">Votre sujet</label>
+                    <input type="text" id="sujet" placeholder="Développement d'un site vitrine">
+                    <textarea class="margin-top" id="message" placeholder="Écrivez votre message ici !"></textarea>
+                </div>
+                <button type="submit" class="btn btn-center border">Envoyer</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="bg-footer">
+        <p>Designed by <span class="text-color">Rosly</span> with HTML CSS JS</p>
+        <p>Tous droits réservés - 2025</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

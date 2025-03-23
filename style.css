@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #f4f3f8;
+}
+
+.bg-white{
+    background-color: white;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #171717;
+    color: #fff;
+    padding: 60px;
+}
+
+nav h1{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    align-items: center;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+nav ul li a:hover{
+    color: #0fdbd0;
+}
+
+.text-color,.active{
+    color: #0fdbd0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 25rem;
+    gap: 20px;
+}
+
+.content {
+    flex: 6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ h2 {
+    font-weight: 500;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.container-form p{
+    font-weight: 500;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.content p{
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: left;
+    margin-top: 15px;
+    margin-inline: 3rem;
+}
+
+.image, .photo {
+    flex: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    margin-top: 3rem;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn{
+    background-color: #0fdbd0;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.margin-top{
+    margin-top: 20px;
+}
+
+.btn.btn-center{
+    align-self: center;
+}
+
+.btn.btn-left{
+    align-self: flex-start;
+    margin-left: 3rem;
+}
+
+.titre{
+    text-align: center;
+    color: #0fdbd0;
+    font-size: 1.5rem;
+    padding-top: 3rem;
+}
+
+.titre-competence{
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 3rem;
+}
+
+.bg-about{
+    background-color: #f4f3f8;
+}
+
+.avatar {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid  #0fdbd0;
+}
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projet {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    justify-content: center;
+    padding: 20px;
+    padding-inline: 3rem;
+    margin-top: 2rem;
+    height: 22rem;
+}
+
+.card {
+    background-color: #f4f3f8;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    height: 15rem;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.card-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+    margin-top: 2rem;
+}
+
+.skills-card {
+    background: white;
+    padding: 30px;
+    padding-left: 40px;
+    padding-right: 80px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 35rem;
+    text-align: center;
+}
+
+h3 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.skill {
+    margin-bottom: 5px;
+}
+
+.skill span {
+    display: block;
+    font-size: 0.9rem;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: #0fdbd0;
+    border-radius: 5px;
+}
+
+.bg-form{
+    background-color: #171717;
+    margin-top: 3rem;
+    color: white;
+   height: 38rem;
+   display: flex;
+   align-items: center;
+}
+
+.container-form {
+    width: 35rem;
+    margin: 50px auto;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+label{
+    padding-bottom: 5px;
+}
+
+.margin-top{
+    margin-top: 15px;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.input-group div {
+    flex: 1;
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    display: block;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid #0fdbd0;
+    background-color: white;
+    color: black;
+}
+
+textarea {
+    height: 200px;
+    resize: none;
+}
+
+footer {
+    background-color: #f4f3f8;
+    padding: 25px;
+    padding-inline: 3rem;
+    font-size: .9rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.border{
+    border: 1px solid #fff;
+}
